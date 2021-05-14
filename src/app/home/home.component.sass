@@ -1,0 +1,71 @@
+$pathToAssets : '../../assets'
+@import '../../styles.sass'
+
+@font-face
+    font-family: 'Ubuntu'
+    src: url($pathToAssets+"/fonts/Ubuntu-Medium.ttf") format("truetype")
+
+@font-face
+    font-family: 'Poppins'
+    src: url($pathToAssets+"/fonts/Poppins-Medium.ttf") format("truetype")
+
+$ubuntu: 'Ubuntu', sans-serif
+$poppins: 'Poppins', sans-serif
+
+.home
+    display: flex
+    background: url("../../assets/images/main-bg.jpg") no-repeat center
+    height: 100vh
+    min-height: 500px
+    color: #fff
+    background-size: cover
+    background-attachment: fixed
+    font-family: $ubuntu
+    // background-color: red
+    // .max-width
+        // margin: auto 0 auto 40px;
+    .max-width
+        max-width: 70%
+        padding: 0 2rem
+        margin: auto  
+    .home-content
+        text-align: center
+        // width:70%
+
+        .text
+            display: block
+            font-size: 5em
+
+            padding-bottom: 5rem
+            span
+                color: $secondary                
+                font-weight: 500
+                text-shadow: 0 13.36px 8.896px #c4db59d, 0 -2px 1px #fff
+
+
+        a
+            width: 10em
+            height:auto
+            color: #fff
+            font-size: 1.5rem
+            font-weight: 300
+            background-color: $secondary
+            padding: 1rem 15rem
+            border-radius: 1rem
+            margin-top: 10em
+            box-shadow: 4px 17px 59px -6px rgba(156,147,147,1)
+            -webkit-box-shadow: 4px 17px 59px -6px rgba(156,147,147,1)
+            -moz-box-shadow: 4px 17px 59px -6px rgba(156,147,147,1)
+            transition : all 2s ease
+            &:hover
+                border-radius: 2.5rem
+                background-color: crimson
+                box-shadow: 4px 17px 59px -6px black
+                -webkit-box-shadow: 4px 17px 59px -6px black
+                -moz-box-shadow: 4px 17px 59px -6px rgba(156,147,147,1)
+                fa-icon
+                    padding-left : 0.4rem
+            fa-icon
+                margin-left:1rem
+                transition : all .3s ease
+
